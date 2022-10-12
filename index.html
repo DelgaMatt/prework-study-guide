@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -51,7 +52,13 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>A margin indicates how much space we want around the outside of an element</li>
+          <li>A padding indicates how much space we want around the content inside an element</li>
+          <li>Use '*' to apply a rule to all the elements visible on the page</li>
+          <li>Declarations contain two important components: the CSS property we want to apply and the value of the property (color: blue;)</li>
+          <li>Combine two selectors (header, footer) into a single CSS rule with a comma, allowing the declaration to effect both selectors</li>
+          <li>Use element 'link' to link your CSS file to the HTML file</li>
+          <li>Class attributes allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with Class Selectory ('card' in our case)</li>
         </ul>
        </section>
    
@@ -59,7 +66,37 @@
         <h2>Git</h2>
         <ul>
           <li>git status: checks what branch we are currently on</li>
+          <li>git add [file]: adds a file as it looks now to your next commit (stage)</li>
+          <li>git reset [file]: unstage a file while retaining the changes in working directory</li>
+          <li>git diff: diff of what is changed but not staged</li>
+          <li>git diff --staged: diff of what is staged but not yet committed</li>
+          <li>git commit -m "[descriptive message]": commit your staged content as a new commit snapshot</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git branch: lists your branches. a * will appear next to the currently active branch</li>
+          <li>git merge [branch]: merge the specific branch's history into the current one</li>
+          <li>git log: show all commits in the current branch's history</li>
+          <li>git config --global user.name "[firstname lastname]": sets a name identifiable for credit when review version history</li>
+          <li>git config --global user.email "[email]": sets an email address that will be associated with each history marker</li>
+          <li>git config --global color.ui auto: set automatic command line coloring for Git for easy reviewing</li>
+          <li>git log branchB...branchA: show the commits on branch A that are not on branch B</li>
+          <li>git log --follow [file]: show the commits that changed file, even across renames</li>
+          <li>git diff branchB...branchA: show the diff of what is in branchA that is not in branchB</li>
+          <li>git show [SHA]: show any object in Git in human-readable format</li>
+          <li>git remote add [alias] [url]: add a git URL as an alias</li>
+          <li>git fetch [alias]: fetch down all the branches from that Git remote</li>
+          <li>git merge [alias]/[branch]: merge a remote branch into your current branch to bring it up to date</li>
+          <li>git push [alias] [branch] transmit local branch commits to the remote repository branch</li>
+          <li>git pull: fetch and merge any commits from the tracking remote branch</li>
+          <li>git rebase [branch]: apply any commits of current branch ahead of a specific one</li>
+          <li>git reset --hard [commit]: clear staging area. rewrite working tree from specified commit</li>
+          <li>git stash: save modified and staged changes</li>
+          <li>git stash list: list stack-order of stashed file changes</li>
+          <li>git stash pop: write working from top of stash stack</li>
+          <li>git stash drop: discard the changes from the top of the stash stack</li>
+          <li>git rm [file]: delete the file from project and stage the removal for commit</li>
+          <li>git mv [existing-path] [new-path]: change an existing file path and stage the move</li>
+          <li>git log --stat -M: show all commit logs with indication of any paths that moved</li>
+          
         </ul>
       </section>
    
